@@ -1,0 +1,19 @@
+nav ul{
+    display: flex;
+    gap: 5px;
+}
+nav li{
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid gray;
+}
+nav li:hover{
+    background-color: blue;
+    color: white;
+}
+.active{
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+}
