@@ -1,7 +1,7 @@
 import { memo } from "react";
 const ListGroup = ({currentWeatherData}) => {
     const {condition,last_updated_epoch,last_updated,is_day,...dataWithoutCondition}=currentWeatherData;
-    console.log('rendered');
+    //console.log('rendered');
   return (
     <div>
         <h2>Current {new Date().toLocaleTimeString('en-US')}</h2>
@@ -11,7 +11,7 @@ const ListGroup = ({currentWeatherData}) => {
                     return <li key={key}><img src={value}/></li>
                 }
                 else if(index==0){
-                    return <li key={key}><strong>Cloud:</strong>{value}</li>
+                    return <li key={key}><strong>Condition:</strong>{value}</li>
                 }       
                 }  
             )}

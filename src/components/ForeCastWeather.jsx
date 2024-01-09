@@ -1,7 +1,7 @@
 import { memo } from "react";
 const ForeCastWeather = ({foreCastHourlyWeatherData}) => {
     const {condition,is_day,time_epoch,time,...dataWithoutCondition}=foreCastHourlyWeatherData;
-    console.log('rendered');
+    //console.log('rendered');
   return (
     <div>
         <h2>{new Date(time).toLocaleTimeString('en-US')}</h2>
