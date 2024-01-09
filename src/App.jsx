@@ -21,13 +21,13 @@ function App() {
     handleButtonClick();
   },[])
   const searchAutoComplete=async ()=>{
-    const response= await fetch(`http://api.weatherapi.com/v1/search.json?key=9c3c258f4f084a8ebfb122017240801&q=${location}`);
+    const response= await fetch(`https://api.weatherapi.com/v1/search.json?key=9c3c258f4f084a8ebfb122017240801&q=${location}`);
     const res=await response.json();
     //console.log(res);
     return res;
   }
   const fetchForeCastData=async ()=>{
-    const response= await fetch(`http://api.weatherapi.com/v1/forecast.json?key=9c3c258f4f084a8ebfb122017240801&q=${location}&days=3`);
+    const response= await fetch(`https://api.weatherapi.com/v1/forecast.json?key=9c3c258f4f084a8ebfb122017240801&q=${location}&days=3`);
     const res=await response.json();
     console.log(res);
     return res;
